@@ -1,5 +1,5 @@
 {
   "extends": "@tsconfig/recommended/tsconfig.json",
   // src/ 配下だけが対象になるように
-  "exclude": ["./sub-directory", "./packages/sub-package"]
+  "exclude": ["./sub-directory"]
 }
