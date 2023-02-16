@@ -11,7 +11,7 @@ permissions:
   contents: read
 
 jobs:
-  lint:
+  lint-root:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
@@ -21,3 +21,14 @@ jobs:
           cache: 'npm'
       - run: npm install
       - run: npm run lint
+
+  lint-workspaces:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - uses: actions/setup-node@v3
+        with:
+          node-version: 18
+          cache: 'npm'
+      - run: npm install
+      - run: npm run --workspaces lint
