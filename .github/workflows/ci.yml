@@ -21,7 +21,7 @@ jobs:
       #     cache: 'npm'
       # - run: npm install
       - run: echo "::add-matcher::.github/problem-matchers/tsc.json"
-      - run: cat sample-error-root.txt
+      - run: cat sample-error-sub-directory.txt
   #     - run: npm run lint
 
   # lint-sub-directory:

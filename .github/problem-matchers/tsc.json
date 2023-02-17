@@ -1,18 +1,22 @@
 {
   "problemMatcher": [
-      {
-          "owner": "custom-tsc",
-          "pattern": [
-              {
-                  "regexp": "^([^\\s].*)[\\(:](\\d+)[,:](\\d+)(?:\\):\\s+|\\s+-\\s+)(error|warning|info)\\s+TS(\\d+)\\s*:\\s*(.*)$",
-                  "file": 1,
-                  "line": 2,
-                  "column": 3,
-                  "severity": 4,
-                  "code": 5,
-                  "message": 6
-              }
-          ]
-      }
+    {
+      "owner": "custom-tsc",
+      "pattern": [
+        {
+          "regexp": "^custom-tsc: (.*)$",
+          "fromPath": 1
+        },
+        {
+          "regexp": "^([^\\s].*)[\\(:](\\d+)[,:](\\d+)(?:\\):\\s+|\\s+-\\s+)(error|warning|info)\\s+TS(\\d+)\\s*:\\s*(.*)$",
+          "file": 1,
+          "line": 2,
+          "column": 3,
+          "severity": 4,
+          "code": 5,
+          "message": 6
+        }
+      ]
+    }
   ]
 }
