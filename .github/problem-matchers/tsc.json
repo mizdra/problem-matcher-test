@@ -8,6 +8,9 @@
           "fromPath": 1
         },
         {
+          "regexp": "^.*$"
+        },
+        {
           "regexp": "^([^\\s].*)[\\(:](\\d+)[,:](\\d+)(?:\\):\\s+|\\s+-\\s+)(error|warning|info)\\s+TS(\\d+)\\s*:\\s*(.*)$",
           "file": 1,
           "line": 2,
