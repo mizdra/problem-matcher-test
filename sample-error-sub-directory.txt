@@ -1,6 +1,24 @@
 custom-tsc: sub-directory/
 src/sub-directory-index.ts:1:7 - error TS2322: case1
 
+
+
+
+
+
 custom-tsc: sub-directory/
 
 src/sub-directory-index.ts:1:7 - error TS2322: case2
+
+
+
+
+
+
+custom-tsc: sub-directory/
+weiwei
+weiwei
+src/sub-directory-index.ts:1:7 - error TS2322: case3-1
+src/sub-directory-index.ts:1:7 - error TS2322: case3-2
+weiwei
+src/sub-directory-index.ts:1:7 - error TS2322: case3-3

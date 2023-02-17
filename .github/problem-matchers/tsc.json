@@ -8,7 +8,8 @@
           "fromPath": 1
         },
         {
-          "regexp": "^.*$"
+          "regexp": "^.*$",
+          "loop": true
         },
         {
           "regexp": "^([^\\s].*)[\\(:](\\d+)[,:](\\d+)(?:\\):\\s+|\\s+-\\s+)(error|warning|info)\\s+TS(\\d+)\\s*:\\s*(.*)$",
