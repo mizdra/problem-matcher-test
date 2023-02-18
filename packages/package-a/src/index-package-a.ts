@@ -1,3 +1,3 @@
-// const a: string = 1;
+// const a: string = 1
 
 export {};
