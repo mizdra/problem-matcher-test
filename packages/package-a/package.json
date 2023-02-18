@@ -6,11 +6,8 @@
   "devDependencies": {},
   "scripts": {
     "lint": "run-s -c lint:*",
-    "lint:tsc": "tsc --noEmit",
-    "lint:eslint": "eslint .",
-    "lint-ci": "run-s -c lint-ci:*",
-    "lint-ci:tsc": "tsc --noEmit | reviewdog -f=tsc -reporter=github-check -fail-on-error",
-    "lint-ci:eslint": "eslint ."
+    "lint:tsc": "if [ -z '$CI' ]; then tsc --noEmit; else tsc --noEmit | reviewdog -f=tsc -reporter=github-check -fail-on-error; fi",
+    "lint:eslint": "eslint ."
   },
   "repository": {
     "type": "git",
