@@ -7,7 +7,10 @@
   "scripts": {
     "lint": "run-s -c lint:*",
     "lint:tsc": "tsc --noEmit",
-    "lint:eslint": "eslint ."
+    "lint:eslint": "eslint .",
+    "lint-ci": "run-s -c lint-ci:*",
+    "lint-ci:tsc": "tsc --noEmit | reviewdog -f=tsc -reporter=github-check -fail-on-error",
+    "lint-ci:eslint": "eslint ."
   },
   "repository": {
     "type": "git",
