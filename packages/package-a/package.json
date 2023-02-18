@@ -1,8 +1,9 @@
 {
-  "name": "problem-matcher-test",
+  "name": "package-a",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
+  "devDependencies": {},
   "scripts": {
     "lint": "tsc --noEmit"
   },
@@ -10,18 +11,10 @@
     "type": "git",
     "url": "git+ssh://git@github.com/mizdra/problem-matcher-test.git"
   },
-  "keywords": [],
   "author": "mizdra <pp.mizdra@gmail.com>",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/mizdra/problem-matcher-test/issues"
   },
-  "homepage": "https://github.com/mizdra/problem-matcher-test#readme",
-  "devDependencies": {
-    "@tsconfig/recommended": "^1.0.2",
-    "typescript": "^4.9.5"
-  },
-  "workspaces": [
-    "packages/*"
-  ]
+  "homepage": "https://github.com/mizdra/problem-matcher-test#readme"
 }
