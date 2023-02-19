@@ -6,7 +6,7 @@
   "devDependencies": {},
   "scripts": {
     "lint": "run-s -c lint:*",
-    "lint:tsc": "tsc --noEmit",
+    "lint:tsc": "pipe-if-ci 'tsc --noEmit' -p 'reviewdog -f=tsc -reporter=github-check -fail-on-error'",
     "lint:eslint": "eslint ."
   },
   "repository": {
